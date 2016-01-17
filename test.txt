@@ -1,0 +1,63 @@
+(defparameter words-db '(("abdication")(" bdi keiʃ(ə)n")(" n отречение (от престола); сложение
+полномочий")("abdicate")(" bdikeit")(" v отрекаться;
+отказываться (от права на что либо и т. п.); syn. abandon, give up,
+quit, relinquish, renounce, resign")("abbreviature")("ə br vie i ə")(" n сокращение
+abc [ eib s ] n 1. алфавит, азбука;
+2. основы, зачатки; ∼ of chemistry
+основы химии; 3. железнодорожный (алфавитный) указатель")("abbreviation")("ə br vi eiʃ(ə)n")(" n
+1. сокращение; syn. abridgement,
+abstract, digest, reduction, resume,
+shortening, summary; 2. аббревиатура")("abbreviate")("əbr və(r)eit")(" v сокращать")("abbot")(" bət")(" n аббат")("abbey")(" bi")(" n аббатство; монастырь")("abbess")(" bes")(" n настоятельница
+монастыря
+")("abbacy")(" bəsi")(" n звание аббата")("abattoir")(" bə tw (r)")(" n скотобойня")("abatis")(" bətis")(" n (pl abatis) ист.
+засека, завал
+
+abattage [ bə t
+
+] n массовое
+
+уничтожение
+")("abater")("ə beitə(r)")(" n прошение об
+аннулировании
+")("abatement")("ə beitmənt")(" n 1. уменьшение; ослабление; смягчение;
+2. снижение; скидка; 3. юр. аннулирование, прекращение")("abate")("ə beit")(" v 1. ослаблять, уменьшать, умерять; успокаиваться;
+syn. decline, decrease, diminish,
+ease, fade, lessen, moderate, reduce,
+relieve, low, subside, weaken; 2. снижать (цену, налог и т. п.);
+3. уменьшаться; ослабевать; утихать (о буре, эпидемии и т. п.);
+4. юр. аннулировать, отменять,
+прекращать; 5. притуплять (острие); стесывать (камень); 6. метал.
+отпускать (сталь)")("abatable")("ə beitəb(ə)l")(" adj аннулируемый")("abashment")("ə b ʃmənt")(" n смущение")("abash")("ə b ʃ")(" v пристыжать, смущать, конфузить; приводить в замешательство")("abasement")("ə beismənt")(" n унижение; понижение")("abase")("ə beis")(" v унижать; понижать
+(в чине и т. п.); syn. belittle, degrade, discredit, disgrace, dishonour,
+demean, disparage, humble, humiliate, lower")("abandonment")("ə b ndənmənt")(" n
+1. оставление; 2. отказ от; заброшенность; 3. непринужденость")("abandonee")("ə b ndə n ")(" n страховщик, в пользу которого остается
+застрахованный груз или застрахованное судно в случае аварии")("abandoned")("ə b ndənd")(" adj 1. заброшенный, покинутый; syn. deserted, desolate, empty, forlorn,
+forsaken, neglected, uninhibited, unoccupied, vacated; 2. распутный;
+отъявленный")("abandon")("ə b ndən")(" i v 1. отказываться от; 2. покидать, оставлять;
+
+syn. depart from, desert, forsake, give
+up, leave, leave behind, quit, resign,
+renounce, surrender, vacate, withdraw
+from; 3.: to ∼ oneself to the idea
+склоняться к мысли; ii n непринужденность")("abaft")("ə b ft")(" i adv мор. на корме,
+в сторону кормы, с кормы; ii prеp
+мор. сзади, позади; ∼ the beam
+позади траверза")("abacus")(" bəkəs")(" n (pl es, ci)
+1. абака, счеты; 2. арх. абак(а),
+верхняя часть капители")("abaculus")("ə b kj ləs")(" n стеклянная
+плитка")("abacterial")(" b k tiəriəl")(" adj безмикробный")("aback")("ə b k")(" adv назад, сзади, задом; taken ∼ захваченный врасплох; пораженный, ошеломленный")("abaciscus")(" bə siskəs")(" n плитка")("a")("ə-")(" pref употребляется как приставка в наречиях: abed; alive;
+afoot; ashore и т. п. и в выражениях типа: to go abegging нищенствовать; to go ahunting идти
+на охоту")("a2")("ei, ə")(" 1. грам. неопределенный
+артикль (a перед согласными, кроме
+h немого, an перед гласными и перед h; напр.: a horse, но an hour);
+2. употр. перед некоторыми существительными и прилагательными,
+выражающими множественное число little, few, good (или great)
+many и перед счетными существительными a dozen дюжина; a few
+days несколько дней; a great ma
+ny очень много; 3. один; it costs a
+penny это стоит одно пенни; 4. такой же, одинаковый (после all of,
+many of); all of a size все одной и
+той же величины); 5. twice a day
+два раза в день")("a1")("ei")(" n 1. первая буква англ. алфавита; from a to z в совершенстве, полностью; 2. ам. высшая
+отметка за классную работу;
+straight a “круглое отлично"")("first")("first")("first")("first")))
