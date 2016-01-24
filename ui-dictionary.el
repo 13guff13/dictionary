@@ -1,4 +1,3 @@
-
 (defun translate-at-point ()
   (interactive)
   (if (setq bounds (bounds-of-thing-at-point 'word))
