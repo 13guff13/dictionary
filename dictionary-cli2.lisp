@@ -9,7 +9,7 @@
 (in-package :db-dictionary)
 ;;(princ (db-dictionary:search-in-db "home"))
 ;;(princ sb-ext:*posix-argv*)
-(princ (db-dictionary:search-in-db (caddr sb-ext:*posix-argv*)))
+(princ (db-dictionary:search-in-db-by-regexp (caddr sb-ext:*posix-argv*)))
 
 
 ;;(if (> (length sb-ext:*posix-argv*) 1)
