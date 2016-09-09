@@ -18,9 +18,27 @@
 
 (in-package :db-dictionary)
 
-(defparameter db-file-path "./test.lisp")
+(defparameter db-file-path "~/emacs/sbcl/dictionary/test.lisp")
 (defparameter words-db ())
 (load db-file-path)
+
+;;(defun update-column-value (fn-get-column fn-generate-new-value list-db)
+;;  (setf (funcall fn-get-column list-db) (funcall fn-generate-new-value list-db))
+;;  (if (not (null (cdr list-db)))
+;;      3))
+      ;;(update-column-value fn-get-column fn-generate-new-value list-db)))
+
+;;(update-column-value #'cadar #'new-value words-db)
+
+;;(defun new-value (lst)
+;;  (let ((word (caar lst)))
+;;    (with-output-to-string (stream)
+;;      (sb-ext:run-program "/usr/bin/espeak"
+;;                          `("-xq" "--ipa=3" ,word)
+;;                          :output stream))))
+
+;;(update-column-value #'cadar 
+
 
 (defun update-dictionary ()
   (with-open-file (stream db-file-path :direction :output
@@ -37,8 +55,8 @@
 
 (defun extract-value (item str)
   (multiple-value-bind (all-begin)  
-      (cl-ppcre:scan (concatenate 'string (format nil ".*(")
-                                  str (format nil ").*"))
+      (cl-ppcre:scan (concatenate 'string (format nil "^(")
+                                  str (format nil ")$"))
                      (car item))
     (if (null all-begin) nil
         item)))
