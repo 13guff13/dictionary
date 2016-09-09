@@ -1,0 +1,4 @@
+http://lisper.ru/wiki/sbcl-save-lisp-and-die
+
+usage example :
+ ./lc file-to-compilation.lisp :load :image

@@ -56,7 +56,7 @@
 (defun extract-value (item str)
   (multiple-value-bind (all-begin)  
       (cl-ppcre:scan (concatenate 'string (format nil "^(")
-                                  str (format nil ")$"))
+                                  (format nil "~(~a~)" str) (format nil ")$"))
                      (car item))
     (if (null all-begin) nil
         item)))
