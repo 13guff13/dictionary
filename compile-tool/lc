@@ -1,0 +1,6 @@
+#!/bin/sh
+sbcl --noinform            \
+     --sysinit /dev/null   \
+     --userinit /dev/null  \
+     --load "compile.lisp" \
+     $@
