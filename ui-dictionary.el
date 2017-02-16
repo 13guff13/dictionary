@@ -26,6 +26,10 @@
 (setq process (start-process "test process sbcl" buffer "sbcl"))
 (select-window (display-buffer buffer))
 
+(unless (equal 'run (process-status process))
+  (message "wrong"))
+
+
 (kill-process process)
 (process-command process)
 (process-status process)
@@ -60,7 +64,16 @@
 ;; run sequence.
 (defun run-translation-process()
   (setq history-of-translation-list nil)
-  (setq buffer (get-buffer-create "*test-sbcl*"))
+  ;; (setq buffer (get-buffer-create "*test-sbcl*"))
+  (setq process nil)
+  
+  (defun get-process()
+    (unless (and (processp process) (equal 'run (process-status process)))
+      (setf process (start-process "sbcl-for-translating-script" (get-buffer-create "*test-sbcl*") "sbcl" "--noinform" "--disable-debugger"))
+      (process-send-string process "(load \"~/emacs/external-git-repo/dictionary/dictionary-init.lisp\")\n")
+      (set-process-filter process 'my-output-filter))
+    process)
+
   (defun get-translate-output-buffer()
     (if (get-buffer "*translate-output*")
 	(get-buffer "*translate-output*")
@@ -72,7 +85,7 @@
 	(insert string))
       (insert string)))
   (defun translate-word-trigger(word)
-    (process-send-string process (concatenate 'string "(db-dictionary:search-in-db-by-regexp \"" word "\")\n")))
+    (process-send-string (get-process) (concatenate 'string "(db-dictionary:search-in-db-by-regexp \"" word "\")\n")))
   (defun translate-at-point()
     (interactive)
     (if (setq bounds (bounds-of-thing-at-point 'word))
@@ -86,12 +99,11 @@
 				   (cdr bounds))))
       (message "don't find any word.")))
   (local-set-key (kbd "C-t") 'translate-at-point)
-  (setq process (start-process "sbcl-for-translating-script" buffer "sbcl"))
-  (process-send-string process "(load \"~/emacs/external-git-repo/dictionary/dictionary-init.lisp\")\n")
-  (set-process-filter process 'my-output-filter)
+
   (message "process translation has starded"))
 ;; end run sequence.
 
 (run-translation-process)
 
 (scroll-down 100000)
+(processp)
